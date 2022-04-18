@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://kit.fontawesome.com/912b696777.js" crossorigin="anonymous"></script>
+    <title>Coffee Shop Website</title>
+</head>
+<body>
+
+    <div id="mobile-menu">
+        <a id="close-btn" href="#">
+            <span class="fa-stack fa-lg">
+                <i class="fa-regular fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-x fa-stack-1x"></i>
+            </span>
+        </a>
+        <div class="container">
+            <div class="row vh-100 align-items-center">
+                <div class="col-12 text-center">
+                    <div>
+                        <a class="text-decoration-none h2 link-navigation" href="#intro-section">ABOUT</a>
+                    </div>
+                    <div class="my-3">
+                        <a class="text-decoration-none h2 link-navigation" href="#products-section">PRODUCTS</a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="text-decoration-none h2 link-navigation" href="#contact-section">CONTACT</a>
+                    </div>
+                    <div>
+                        <a class="text-decoration-none h2 link-navigation" href="#map-section">HOW TO FIND US?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header id="navbar" class="p-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-8">
+                    <a href="index.html"><img id="nav-logo" src="svg/header-logo.svg" alt="header-logo"></a>
+                </div>
+                <div class="d-none d-md-block col-8 text-end">
+                    <a class="text-decoration-none text-light links" href="#intro-section">ABOUT</a>
+                    <a class="text-decoration-none text-light links" href="#products-section">PRODUCTS</a>
+                    <a class="text-decoration-none text-light links" href="#contact-section">CONTACT</a>
+                    <a class="text-decoration-none text-light links" href="#map-section">HOW TO FIND US?</a>
+                </div>
+                <div class="col-4 d-md-none d-block text-end">
+                    <a href="#">
+                        <i id="menu-icon" class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="hero-section" class="text-light">
+        <div class="container-fluid">
+            <div class="row vh-100 align-items-center">
+                <div class="col-12 text-center">
+                    <img class="img-fluid" id="hero-logo" src="svg/logo.svg" alt="hero-logo">
+                    <h1 class="display-1 fw-bold">THE HOME OF COFFEE</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum a leo id lacus gravida semper at eu lacus</p>
+                </div>
+            </div>
+        </div>
+        <a href="#intro-section">
+            <span id="hero-arrow" class="fa-stack">
+                <i class="fa-regular fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-angle-down fa-stack-1x"></i>
+            </span>
+        </a>
+    </section>
+
+    <section id="intro-section" class="p-5">
+        <div class="container-fluid">
+            <div class="row p-sm-5 justify-content-center">
+                <div class="col-12 col-md-8 text-center">
+                    <h1 class="fw-bold">THE BEST COFFEE SHOP</h1>
+                    <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+                </div>
+            </div>
+            <div class="row p-md-5 justify-content-center">
+                <div class="col-10 col-md-4 text-center pb-5 pt-0">
+                    <img class="img-fluid intro-picture" src="svg/icon-1.svg" alt="icon1">
+                    <h4 class="fw-bold">BEST BEANS</h4>
+                </div>
+                <div class="col-10 col-md-4 text-center pb-5">
+                    <img class="img-fluid intro-picture" src="svg/icon-2.svg" alt="icon2">
+                    <h4 class="fw-bold">QUALITY MILK</h4>
+                </div>
+                <div class="col-10 col-md-4 text-center pb-5">
+                    <img class="img-fluid intro-picture" src="svg/icon-3.svg" alt="icon3">
+                    <h4 class="fw-bold">PERFECT BLEND</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10 col-lg-5 p-5 align-self-center offset-1 about-style">
+                    <h2 class="fw-bold">GREAT PLACE</h2>
+                    <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <button class="btn btn-primary">FIND OUT MORE</button>
+                </div>
+                <div class="col-5 offset-1 d-none d-lg-block" id="about-pic1">
+
+                </div>
+            </div>
+            <div class="row" id="about-pic2">
+                <div class="col-6 d-none d-md-block">
+
+                </div>
+                <div class="col-10 col-md-6 p-5 align-self-center offset-1 offset-md-0 about-style">
+                    <h2 class="fw-bold text-light">FRESH BEANS</h2>
+                    <p class="lead text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <button class="btn btn-primary">FIND OUT MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+
+    <section id="products-section"> 
+        <div class="container p-sm-5">
+            <div class="row pt-5 justify-content-center">
+                <div class="col-10 text-center">
+                    <h1 class="fw-bold">SELECTION FROM OUR MENU</h1>
+                    <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                </div>
+            </div>
+            <div class="row p-5 products-style">
+                <div class="col-12 col-lg-4 p-lg-5 pb-5 text-center">
+                    <img class="img-fluid p-3" src="img/coffee-item-1.png" alt="item1">
+                    <h2>BLACK CAKE</h2>
+                    <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <h3>4€</h3>
+                </div>
+                <div class="col-12 col-lg-4 p-lg-5 pb-5 text-center">
+                    <img class="img-fluid p-3" src="img/coffee-item-2.png" alt="item2">
+                    <h2>BLACK COFFEE</h2>
+                    <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <h3>6€</h3>
+                </div>
+                <div class="col-12 col-lg-4 p-lg-5 pb-5 text-center">
+                    <img class="img-fluid p-3" src="img/coffee-item-3.png" alt="item3">
+                    <h2>ESPRESSO</h2>
+                    <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <h3>6€</h3>
+                </div>
+                <div class="col-12 col-lg-4 p-lg-5 pb-5 text-center">
+                    <img class="img-fluid p-3" src="img/coffee-item-4.png" alt="item4">
+                    <h2>LATE</h2>
+                    <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <h3>6€</h3>
+                </div>
+                <div class="col-12 col-lg-4 p-lg-5 pb-5 text-center">
+                    <img class="img-fluid p-3" src="img/coffee-item-5.png" alt="item5">
+                    <h2>MACARONS</h2>
+                    <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <h3>3€</h3>
+                </div>
+                <div class="col-12 col-lg-4 p-lg-5 text-center">
+                    <img class="img-fluid p-3" src="img/coffee-item-6.png" alt="item6">
+                    <h2>MACCHIATO</h2>
+                    <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <h3>6€</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <div class="conatiner-fluid text-light">
+            <div class="row m-0">
+                <div class="col-12 col-lg-5 offset-lg-1 p-5">
+                    <h2 class="fw-bold">YOU ARE WELCOME!</h2>
+                    <p>COME ON IN!</p>
+                    <br>
+                    <h4>WEEKDAYS</h4>
+                    <p>08PM-12AM</p>
+                    <br>
+                    <h4>WEEKENDS</h4>
+                    <p>12PM-02AM</p>
+                </div>
+                <div class="col-12 col-lg-6 p-5 pe-0" id="contact-blur-img">
+                    <h2>CONTACT</h2>
+                    <br>
+                    <h4>PHONE</h4>
+                    <p>+(000) 111 222 333</p>
+                    <br>
+                    <h4>MAIL</h4>
+                    <p>address@domain.com</p>
+                    <br>
+                    <h4>ADDRESS</h4>
+                    <p>543 TN, doula street NY, New York</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map-section">
+        <div id="map">
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid p-3">
+            <div class="row">
+                <div class="col-5 align-self-center offset-md-1" id="footer-text">
+                    <p class="text-light">Coffee Shop | &copy; 2020 All rights reserved</p>
+                </div>
+                <div class="col-5 text-end" id="social-media">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-square-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

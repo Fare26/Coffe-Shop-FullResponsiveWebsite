@@ -1,0 +1,212 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+/********************************************NAVBAR********************************************/
+
+#navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.links {
+    margin-left: 25px;
+}
+
+#nav-logo {
+    height: 24px;
+}
+
+#menu-icon {
+    font-size: 34px;
+    color: #fff;
+}
+
+
+/********************************************MOBILE MENU********************************************/
+
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #312423ed;
+    z-index: 2;
+    display: none;
+}
+
+#mobile-menu a {
+    color: #fff;
+}
+
+#mobile-menu  a:hover {
+    color: #afabab;
+}
+
+#close-btn {
+    position: absolute;
+    right: 29px;
+    top: 15px;
+    width: 30px;
+    color: #fff;
+}
+
+.scrolling-navbar {
+    background-color: #c69572;
+    transition: background-color 0.2s ease;
+}
+
+@media screen and (max-width:300px) {
+    #nav-logo {
+        height: 18px;
+    }
+    #menu-icon {
+        font-size: 24px;
+    }
+    #intro-section {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+/********************************************HEADER SECTION********************************************/
+
+#hero-section {
+    background: linear-gradient(to right, #4133329c, #4133329c), url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero-logo {
+    height: 256px;
+}
+
+#hero-arrow {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+/********************************************INTRO SECTION********************************************/
+
+#intro-section {
+    background-color: #eae7de;
+}
+
+.intro-picture {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.intro-picture:hover {
+    transform: scale(1.3);
+}
+
+/********************************************ABOUT SECTION********************************************/
+
+#about-pic1 {
+    background-image: url(../img/great-place.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 480px;
+}
+
+#about-pic2 {
+    background-image: url(../img/fresh-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    min-height: 640px;
+}
+
+@media screen and (max-width:768px) {
+    #about-pic2 {
+        background: linear-gradient(to right, #1a1a1a9c, #1a1a1a9c), url(../img/fresh-beans.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        min-height: 640px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .about-style {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .products-style {
+        padding-left: 36px !important;
+        padding-right: 36px !important;
+    }
+}
+
+/********************************************PRODUCTS SECTION********************************************/
+
+#products-section {
+    background-color: #eae7de;
+}
+
+/********************************************CONTACT SECTION********************************************/
+
+#contact-section {
+    background: linear-gradient(to right, #36313782, #36313782), url(../img/contact-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+#contact-blur-img {
+    background-color: #312423a8;
+}
+
+/********************************************MAP SECTION********************************************/
+
+#map {
+    height: 480px;
+}
+
+/********************************************FOOTER********************************************/
+
+footer {
+    background-color: #312423;
+}
+
+#social-media a i {
+    font-size: 38px;
+    padding-left: 7px;
+    color: #fff;
+}
+
+#social-media a {
+    text-decoration: none;
+}
+
+#footer-text p {
+    margin: 0;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    #social-media {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    #footer-text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
